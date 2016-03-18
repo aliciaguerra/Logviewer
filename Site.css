@@ -1,0 +1,675 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.divLogPopup {
+    background-color: #fff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+    .divLogPopup:hover {
+        border-color: #363e4a;
+    }
+
+.divLog {
+    background-color: #fff;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+    .divLog:hover {
+        background-color: #95ABCC;
+    }
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    background-color: #363e4a;
+    margin: 50px auto;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+.spinnerSmall {
+    width: 20px;
+    height: 20px;
+    background-color: #363e4a;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+.spinnerSmallCenter {
+    width: 20px;
+    height: 20px;
+    background-color: #363e4a;
+    margin: 5px auto;
+    -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+    animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+    0% {
+        -webkit-transform: perspective(120px);
+    }
+
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+    }
+}
+
+@keyframes rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+.navbar-inverse {
+    background-color: #363e4a; /* background color will be black for all browsers */
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+}
+
+.wordwrap {
+    white-space: pre-wrap; /* CSS3 */
+    white-space: -moz-pre-wrap; /* Firefox */
+    white-space: -pre-wrap; /* Opera <7 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* IE */
+}
+
+textarea {
+    max-width: none;
+}
+
+.jumbotron {
+    margin-top: 40px;
+}
+
+.panel {
+    margin-top: 1px;
+}
+
+.go-top {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 10px;
+    padding: 1em;
+    display: none;
+}
+
+    .go-top > a:hover, a:visited {
+        color: white;
+    }
+
+    .go-top:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+.INFO {
+    background-color: #8AC7FF;
+    color: #000000;
+}
+
+.ERROR {
+    background-color: #B23944;
+    color: #FFFFFF;
+}
+
+.WARN {
+    background-color: #FFC600;
+    color: #000000;
+}
+
+.DEBUG {
+    background-color: #E9E9E9;
+    color: #000000;
+}
+
+.partition-half {
+    float: left;
+    width: 50%;
+}
+
+.partition-content {
+    margin-left: 5%;
+}
+
+.panel-primary {
+    border-color: #363e4a;
+}
+
+    .panel-primary > .panel-heading {
+        color: #fff;
+        background-color: #363e4a;
+        border-color: #363e4a;
+    }
+
+.btn-primary {
+    background-color: #363e4a;
+    border-color: #363e4a;
+}
+
+    .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
+        background-color: #eee;
+        border-color: #eee;
+        color: #555;
+    }
+
+    .btn-primary:hover {
+        background-color: #2B4163;
+        border-color: #363e4a;
+    }
+
+    .btn-primary:focus {
+        background-color: #363e4a;
+        border-color: #363e4a;
+    }
+
+.btn-danger {
+    background-color: #B23944;
+    border-color: #B23944;
+}
+
+.btn-link {
+    color: #363e4a;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #363e4a;
+    border-color: #363e4a;
+}
+
+a {
+    color: #2B4163;
+}
+
+    a:hover, a:focus {
+        color: #2B4163;
+    }
+
+.modal-header {
+    padding-bottom: 1px;
+    border-bottom: 0px solid #fff;
+}
+
+.modal-body {
+    padding-top: 5px;
+}
+
+.metrics {
+    margin-top: 3px;
+    font-family: "Helvetica Neue", Arial;
+}
+
+    .metrics .metric {
+        float: left;
+        width: 33.33%;
+        padding: 6px 0;
+        text-align: center;
+        border-right: 1px solid #526075;
+        box-shadow: inset 0 1px rgba(255,255,255,0.3);
+        background-color: #363e4a;
+        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #303d4f), color-stop(100%, #435266)),#686e78;
+        background: -webkit-linear-gradient(#303d4f, #435266),#686e78;
+        background: -moz-linear-gradient(#303d4f, #435266),#686e78;
+        background: -o-linear-gradient(#303d4f, #435266),#686e78;
+        background: linear-gradient(#303d4f, #435266),#686e78;
+        border-radius: 5px;
+    }
+
+    .metrics .metric25 {
+        width: 25%;
+    }
+
+    .metrics .metric20 {
+        width: 20%;
+    }
+
+    .metrics .metric .field {
+        color: #f4f4f4;
+        margin-bottom: 3px;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    .metrics .metric .data {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        -webkit-text-shadow: 1px 1px #000;
+        text-shadow: 1px 1px #000;
+    }
+
+    .metrics .metric .dataSmall {
+        display: block;
+        color: #fff;
+        font-size: smaller;
+        -webkit-text-shadow: 1px 1px #000;
+        text-shadow: 1px 1px #000;
+    }
+
+.red {
+    background: #8f0222 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #8f0222 2%, #8f0222 75%, #a90329 98%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#8f0222), color-stop(75%,#8f0222), color-stop(98%,#a90329)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #8f0222 2%,#8f0222 75%,#a90329 98%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #8f0222 2%,#8f0222 75%,#a90329 98%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #8f0222 2%,#8f0222 75%,#a90329 98%) !important; /* IE10+ */
+    background: linear-gradient(to bottom, #8f0222 2%,#8f0222 75%,#a90329 98%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f0222', endColorstr='#a90329',GradientType=0 ) !important; /* IE6-9 */
+}
+
+.normal {
+    border-right: 1px solid #526075 !important;
+    box-shadow: inset 0 1px rgba(255,255,255,0.3) !important;
+    background-color: #363e4a !important;
+}
+
+.circle-green {
+    background-color: #5cb85c;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.circle-red {
+    background-color: rgb(241, 67, 19);
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.spinnerBounce {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 1px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+
+.spinnerCircle {
+    margin: 100px auto;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+td.ng-binding {
+    white-space: nowrap;
+}
+
+.spinnerCircle > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinnerCircle .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinnerCircle .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinnerCircle .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinnerCircle .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4);
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+@keyframes stretchdelay {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+.column-count {
+    /*-moz-column-count: 4; Firefox */
+    /* -webkit-column-count: 4; Safari and Chrome 
+	column-count: 4;*/
+    margin: 10px 0;
+    padding: 0;
+}
+
+    .column-count li {
+        width: 150px;
+        height: 200px;
+        margin: 10px;
+        float: left;
+        list-style: none;
+    }
+
+.table-bg th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.table-bg td.ng-binding {
+    white-space: normal;
+}
+
+.column-count img {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #808080;
+}
+
+.column-count div {
+    font-weight: bold;
+}
+
+.form-group {
+    float: left;
+    width: 100%;
+}
+
+.form-datepicker .form-group {
+    float: none;
+}
+
+.form-datepicker .ng-isolate-scope label, .form-datepicker .ng-isolate-scope input {
+    margin: 0;
+}
+
+.form-datepicker label {
+    margin-top: 25px;
+}
+
+.form-datepicker input {
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.input-sm {
+    float: left;
+}
+
+.modal {
+    display: block;
+}
+
+table td a {
+    max-height: 20px !important;
+    padding: 0px 12px !important;
+}
+
+table td input {
+    max-height: 30px !important;
+    padding: 0px 15px;
+}
+
+table td button {
+    padding: 4px 12px !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+table td {
+    border-top: 0px solid #ddd !important;
+}
+
+.panel-group .panel + .panel {
+    margin-top: -1px !important;
+}
+
+.footer {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+    bottom: 0px;
+    position: fixed;
+    margin-left: 47%;
+}
+
+    .footer .credit {
+        margin: 2px 0;
+    }
+
+.modal.in .modal-dialog {
+    max-width: 85%;
+    min-width: 65%;
+}
+
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+    background-color: #5EAF75;
+}
+
+.highcharts-container {
+    width: 99% !important;
+}
+
+.angular-google-map-container {
+    height: 700px;
+}
+
+.activetab {
+    background-color: #E5E5F1 !important;
+}
+
+.filterable {
+    margin-top: 15px;
+}
+
+    .filterable .panel-heading .pull-right {
+        margin-top: -20px;
+    }
+
+    .filterable .filters input[disabled] {
+        background-color: transparent;
+        border: none;
+        cursor: auto;
+        box-shadow: none;
+        padding: 0;
+        height: auto;
+    }
+
+        .filterable .filters input[disabled]::-webkit-input-placeholder {
+            color: #333;
+        }
+
+        .filterable .filters input[disabled]::-moz-placeholder {
+            color: #333;
+        }
+
+        .filterable .filters input[disabled]:-ms-input-placeholder {
+            color: #333;
+        }
+
+.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+    background-color: #d3d3d3;
+}
+
+.tdaligne {
+    text-align: center;
+}
+
+.rowcell {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.rowcellBold {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.setting-box {
+    border: 1px solid #ccc;
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+    .setting-box h2 {
+        background: #ccc;
+        margin: 0 0 10px 0;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .setting-box h2 {
+        background: #ccc;
+        margin: 0 0 10px 0;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .setting-box .form-horizontal .form-group {
+        margin-left: 0;
+    }
+
+    .ng-isolate-scope .form-group {
+        margin:0;
+    }
